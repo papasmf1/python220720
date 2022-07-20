@@ -12,5 +12,20 @@ print(strB.endswith("ful", 7))
 print(strB.count("p"))
 print(strB.count("p", 7))
 
+print("MBC2580".isalnum())
+print("MBC:2580".isalnum())
+print("2580".isdecimal())
+
+u = "<<< spam and ham >>>"
+#앞뒤에 있는 어떤 문자 
+result = u.strip("<> ") 
+print(u)
+print(result)
+
+result = result.replace("spam", "spam egg")
+print(result)
+lst = result.split()
+print(lst)
+print(":)".join(lst))
 
 
