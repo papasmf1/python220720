@@ -27,6 +27,11 @@ with open("demo.txt", "rt") as f:
     for item in f.readlines():
         print(item, end="")
 
+print("---첨부하는 경우---")
+#wt, a+ 다른 상황 
+f = open("demo.txt", "a+")
+f.write("다른 데이터\n")
+f.close() 
 
 
 
