@@ -26,3 +26,9 @@ print(url)
 f = open("demo.txt", "wt")
 f.write("첫번째\n두번째\n세번째\n")
 f.close()
+
+#파일을 읽어서 처리
+f = open("demo.txt", "rt")
+result = f.read()
+print(result)
+f.close() 
