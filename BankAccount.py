@@ -23,6 +23,6 @@ print(account1)
 #print(account1.__balance)
 #외부에서는 이름이 변경
 #외부에서 접근하는 백도어(테스트 용도)
-print(account1._BankAccount__balance)
+#print(account1._BankAccount__balance)
 
 
