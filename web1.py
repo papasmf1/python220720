@@ -18,6 +18,10 @@ soup = BeautifulSoup(page, "html.parser")
 #print(soup.find_all("p", class_='outer-text'))
 #태그의 내부 문자열을 리턴
 for tag in soup.find_all("p"):
-    print(tag.text)
+    title = tag.text.strip() 
+    title = title.replace("\n", "")
+    print(title)
+
+
 
 
