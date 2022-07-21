@@ -14,8 +14,13 @@ cartoons = soup.find_all("td", class_="title")
 # <td class="title">
 # 	<a href="/webtoon/detail">마음의 소리 50화 <격렬한 나의 하루> </a>
 # </td>
-print("갯수{0}".format(len(cartoons)))
+print("갯수:{0}".format(len(cartoons)))
 title = cartoons[0].find("a").text 
 link = cartoons[0].find("a")["href"]
 print(title)
 print(link)
+
+for item in cartoons:
+    item2 = item.find("a")
+    title = item2.text.strip()
+    print(title)
