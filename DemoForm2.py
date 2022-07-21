@@ -9,7 +9,7 @@ import urllib.request
 from bs4 import BeautifulSoup
 
 #폼디자인을 로딩(2번폼)
-form_class = uic.loadUiType("DemoForm2.ui")[0]
+form_class = uic.loadUiType("c:\\work3\\DemoForm2.ui")[0]
 
 #클래스 정의(QMainWindow)
 class DemoForm(QMainWindow, form_class):
