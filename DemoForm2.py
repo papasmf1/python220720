@@ -18,7 +18,7 @@ class DemoForm(QMainWindow, form_class):
         super().__init__()
         self.setupUi(self)
     #슬롯 메서드
-    def firstClick(self):
+    def firstClick(self): 
         f = open("webtoon.txt", "wt", encoding="utf-8")
         try: 
             for i in range(1,11):
