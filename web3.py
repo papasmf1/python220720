@@ -10,7 +10,8 @@ f = open("webtoon.txt", "wt", encoding="utf-8")
 #에러 처리 
 try: 
     for i in range(1,11):
-        url = "https://comic.naver.com/webtoon/list?titleId=20853&weekday=fri&page=" + str(i)
+        url = "https://comic.naver.com/webtoon/list?titleId=20853&weekday=fri&page=" \
+            + str(i)
         print(url)
         data = urllib.request.urlopen(url) 
         soup = BeautifulSoup(data, "html.parser")
