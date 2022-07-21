@@ -1,8 +1,9 @@
-# web2.py 
+# web3.py 
 #웹서버와 통신할 경우 
 import urllib.request
 #클로링
 from bs4 import BeautifulSoup
+
 
 #파일로 저장
 f = open("webtoon.txt", "wt", encoding="utf-8")
