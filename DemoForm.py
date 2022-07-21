@@ -1,4 +1,5 @@
 # DemoForm.py 
+# DemoForm.ui(화면단) + DemoForm.py(로직단)
 import sys 
 from PyQt5.QtWidgets import * 
 from PyQt5 import uic 
@@ -15,8 +16,8 @@ class DemoForm(QDialog, form_class):
         self.label.setText("첫번째 Qt화면")
 
 #진입점을 체크
-if __name__ == "__main__":
-    app = QApplication(sys.argv)
-    demoWindow = DemoForm()
-    demoWindow.show() 
-    app.exec_() 
+#if __name__ == "__main__":
+app = QApplication(sys.argv)
+demoWindow = DemoForm()
+demoWindow.show() 
+app.exec_() 
