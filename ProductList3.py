@@ -39,11 +39,6 @@ class Window(QMainWindow, form_class):
         #self.tableWidget.horizontalHeaderItem(2).setTextAlignment(Qt.AlignRight)
         #탭키로 네비게이션 금지 
         self.tableWidget.setTabKeyNavigation(False)
-        #self.tableWidget.setFocusPolicy(Qt.NoFocus)
-        #엔터키를 클릭하면 다음 컨트롤로 이동하는 경우 
-        # self.prodID.tabOrder = 0 
-        # self.prodName.tabOrder = 1 
-        # self.prodPrice.tabOrder = 2 
         #QLineEdit으로 수정함
         self.prodID.returnPressed.connect(lambda: self.focusNextChild())
         self.prodName.returnPressed.connect(lambda: self.focusNextChild())
