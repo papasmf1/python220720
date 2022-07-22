@@ -49,7 +49,7 @@ class Window(QMainWindow, form_class):
         self.prodName.returnPressed.connect(lambda: self.focusNextChild())
         self.prodPrice.returnPressed.connect(lambda: self.focusNextChild())
         #더블클릭 시그널 처리
-        #self.tableWidget.doubleClicked.connect(self.doubleClick())
+        self.tableWidget.doubleClicked.connect(self.doubleClick)
 
     def addProduct(self):
         #입력 파라메터 처리 
