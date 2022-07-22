@@ -6,11 +6,11 @@ import sqlite3
 import os.path 
 
 #DB파일이 없으면 만들고 있다면 접속한다. 
-if os.path.exists("c:\\work\\ProductList.db"):
-    con = sqlite3.connect("c:\\work\\ProductList.db")
+if os.path.exists("ProductList.db"):
+    con = sqlite3.connect("ProductList.db")
     cur = con.cursor()
 else: 
-    con = sqlite3.connect("c:\\work\\ProductList.db")
+    con = sqlite3.connect("ProductList.db")
     cur = con.cursor()
     cur.execute(
         "create table Products (id integer primary key autoincrement, Name text, Price integer);")
@@ -48,6 +48,8 @@ class Window(QMainWindow, form_class):
         self.prodID.returnPressed.connect(lambda: self.focusNextChild())
         self.prodName.returnPressed.connect(lambda: self.focusNextChild())
         self.prodPrice.returnPressed.connect(lambda: self.focusNextChild())
+        #더블클릭 시그널 처리
+        #self.tableWidget.doubleClicked.connect(self.doubleClick())
 
     def addProduct(self):
         #입력 파라메터 처리 
